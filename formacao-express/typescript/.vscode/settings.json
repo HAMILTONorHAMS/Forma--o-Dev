@@ -1,0 +1,12 @@
+{
+     "code-runner.executorMap": {
+         "typescript": "npx tsx",
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false,
+        "yaml": false
+    }
+ }
