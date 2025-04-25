@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio do Formulário</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de Receita/Despesa</h1>
+    </header>
+    <main>
+      <form action="salvar">
+        <div>
+          <h3>Descrição</h3>
+          <input
+            name="descricao"
+            type="text"
+            placeholder="Digite a descrição da Receita ou Despesa"
+          />
+        </div>
+        <div>
+          <h3>Observação</h3>
+          <input
+            name="observacao"
+            type="text"
+            placeholder="Digite a observação da Receita ou Despesa"
+          />
+        </div>
+        <h3>Tipo</h3>
+        <div>
+          <label for="tipo">Receita</label>
+          <input type="radio" name="tipo" id="tReceita" />
+          <label for="tipo">Despesa</label>
+          <input type="radio" name="tipo" id="tDespesa" />
+        </div>
+        <div>
+          <label for="valor"><h3>Valor</h3></label>
+          R$
+          <input
+            step="0.01"
+            min="0"
+            placeholder="Digite o valor"
+            type="number"
+            name="valor"
+            id="valor"
+          />
+        </div>
+        <div>
+          <label for="consolidade"><h3>Consolidado ?</h3> </label>
+          Sim
+          <input type="checkbox" name="consolidade" id="consolidade" />
+        </div>
+        <div>
+          <label for="conta"><h3>Conta Associada</h3></label>
+          <select name="conta" id="conta">
+            <option value="nubank">Conta do Nubank</option>
+            <option value="caixa">Conta da Caixa</option>
+            <option value="brasil">Conta do Banco do Brasil</option>
+            <option value="inter">Conta do Inter</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <button type="submit">salvar</button>
+          <button type="button">Cancelar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
